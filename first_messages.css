@@ -1,0 +1,105 @@
+.project_name {
+    text-align: right;
+    direction: initial
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.confirmation_message {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    width: 45%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation_message:hover {
+    background-color: #0056b3;
+}
+
+.confirmation_message:active {
+    background-color: #003f7f;
+}
+
+/* .name_confirmation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-align: right;
+    direction: rtl;
+} */
+.user-name-message-bar{
+    border: 2px solid var(--whats-green); 
+    color: var(--whats-green);            
+    height: 45px;                         
+    border-radius: 20px;
+    text-align: rtl;                      
+    direction: rtl;  
+    align-items: center;
+    justify-items: center;   
+    display: flex;
+    flex-direction: row;              
+}
+
+.hello_message{
+    text-align: center;
+    direction: rtl;
+}
+
+#user_name_input {
+    padding-right: 10%;
+    border: none;
+    background-color: transparent;
+}
+    #user_name_input:focus{
+        outline: none;
+        border-color: transparent;
+    }
+
+.name_confirmation {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: right;        /* Aligning text to the right for RTL content */
+        direction: rtl;           /* Right-to-left direction for Hebrew or other RTL languages */
+        
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+        /* font-size: 18px;           Slightly larger text for better readability */
+        color: #333;              /* Dark gray for softer text color */
+        
+        padding: 15px;            /* Adds space inside the container */
+        /* border: 1px solid var(--whats-green);   Subtle border using the WhatsApp green color */
+        border-radius: 10px;      /* Rounded corners for a soft look */
+        background-color: #f9f9f9; /* Light background for contrast */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle 3D effect */
+    }
+
+.name_confirmation p {
+        margin-bottom: 10px;      /* Space between text lines */
+        line-height: 1.6;         /* Better line spacing for readability */
+    }
+    
+.name_confirmation button {
+        background-color: var(--whats-green);  /* Button with WhatsApp green */
+        border: none;
+        border-radius: 5px;       /* Slightly rounded button */
+        color: white;             /* White text for contrast */
+        font-size: 16px;          /* Button text size */
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+    
+    .name_confirmation button:hover {
+        background-color: #20b358; /* Darker green on hover */
+    }
+    

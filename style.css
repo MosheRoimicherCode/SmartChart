@@ -1,0 +1,287 @@
+html, body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+
+
+img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Center elements vertically */
+    padding: 10px;            /* Add padding on all sides */
+    box-sizing: border-box;   /* Include padding in width/height calculation */
+    background-color: #f7f0e6;
+}
+h2 {
+    text-align: center;
+    color: #075E54;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+button {
+    width: 45px;
+    height: 42px;
+    background-color: #008069;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+}
+#chat-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ebe7e0;
+    overflow-y: auto; /* Ensure the container can scroll */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+    #chat-container::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    #chat-container::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    #chat-containe * img{
+        width: 25vw; /* 25% of the viewport width */
+        max-width: 50vw;
+    }
+
+
+
+   
+
+.message {
+    margin: 5px 0;
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    height: auto;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle 3D effect */
+
+    /* in test */
+    direction: rtl;
+    text-align: right;
+}
+
+.message_header{
+    height: 25%;
+    background-color: #3498db;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #DCF8C6;
+    color: #333;
+}
+.support-message {
+    align-self: flex-start;
+    /* background-color: #16a847; */
+    background-color: var(--support-message_backgroung);
+    color: black;
+}
+
+.thumb{
+    direction: rtl; 
+    text-align: right;
+}
+
+.thumb a img{
+    /* max-width: 25vw; */
+}
+#message-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 10px;
+
+    border:none;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+#message-input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: white;
+}
+    #message-input:focus{
+        outline: none;
+        border-color: transparent;
+    }
+
+#file-input {
+    display: none;
+}
+#file-label {
+    width: 45px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+
+    /* Center the text horizontally and vertically */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    padding-left: 1%;
+}
+
+#file-name {
+    margin-right: 10px;
+    font-size: 0.8em;
+    color: #666;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 3s linear infinite; /* Control speed here */
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.name_confirmation_marker{
+    
+}
+
+
+.Icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50%;
+    transition: transform 0.5s ease;
+}
+
+.Icon:hover {
+    transform: scale(1.05);
+}
+
+.Icon-button {
+    background-color: transparent;
+    border-radius: 1px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 100px;
+    color: black;
+    transition: transform 1.1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Icon-image {
+    width: 40px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.Icon-text {
+    text-align: center;
+    display: block;
+    width: 100px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.Header {
+    padding: 5px 5px 5px;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header button {
+    transition: transform 1.1s ease;
+
+}
+
+.Header button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Darker blue on hover for a more professional look */
+    border-radius: 15px;
+    transform: scale(1.05);
+    /* Slight scaling effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow for depth */
+}
+
+.Header button:focus {
+    outline: none;
+    /* Remove default outline */
+    border-color: #6a6e72;
+    /* Highlight border color when focused */
+}
+
+.hideAndShowButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: 1;
+    width: 17%;
+    border-radius: 0px;
+    margin-bottom: 5px;
+}
+
+#HeaderTitle {
+    margin: 0;
+    order: 2;
+    flex-grow: 1;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--whats-green);
+}
+
+.close-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: 1;
+    width: 15%;
+    border-radius: 0px;
+    margin-bottom: 5px;
+}
