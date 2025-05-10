@@ -1,7 +1,7 @@
-    const TELEGRAM_BOT_TOKEN = '7474603524:AAFwPqU4dXdqukqUr8ydH-z8E19pCWWZWE0'; 
+    const TELEGRAM_BOT_TOKEN = '7474603524:AAHx5PzN-RKVMqVulCAI6VFampGoRskuUAY'; 
     const SUPPORT_GROUP_CHAT_ID = '-1002421940434';
     const TELEGRAM_BOT_USERNAME = '@KavMedidaTeamBot'; 
-    const TELEGRAM_SENDER_BOT_TOKEN = '8104017431:AAG92X6hjUgAlAvChLBtkEQXpn0IvzVJTig'
+    const TELEGRAM_SENDER_BOT_TOKEN = '8104017431:8104017431:AAE8RBlHHyYCPgmFFJTkIBwzfilx69DlmQs'
     var offset_to_search_telegram_messages = 460941682;
 
     const userSessions = new Map();
